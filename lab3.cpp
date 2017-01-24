@@ -21,7 +21,6 @@ void* formula_fib (void* arg)
 	thr_num.s_num = 1;
 		
 	long double new_num = 0, i = 0;
-	pthread_mutex_lock(&mutex);
 	for (i; i<99; i++)
 	{
 		new_num = thr_num.f_num + thr_num.s_num;
@@ -30,7 +29,6 @@ void* formula_fib (void* arg)
 		thr_num.s_num = new_num;
 	}
 	cout << endl << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
-	pthread_mutex_unlock(&mutex);	
 	pthread_exit(0);
 }
 
