@@ -40,7 +40,7 @@ int main (int argc, char* argv[])
 
 	for (int i = 0; i<PT_NUM; ++i)
 	{
-                printf("%d поток\n", i+1);
+                cout << i+1 << " поток" << endl;
 		pthread_create(&threads[i], NULL, formula_fib, &i);
                 pthread_join(threads[i], NULL);
 	}
