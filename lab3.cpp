@@ -6,8 +6,6 @@
 
 using namespace std;
 
-pthread_mutex_t mutex;
-
 struct fib
 {
 	long double f_num;
