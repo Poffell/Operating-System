@@ -2,7 +2,7 @@
 #include <iostream>
 #include <pthread.h>
 
-#define PT_NUM 10
+#define PT_NUM 9
 
 using namespace std;
 
