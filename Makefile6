@@ -1,0 +1,2 @@
+g++ lab6.cpp -lpthread && ./a.out
+
