@@ -1,0 +1,1 @@
+gcc Server.c && ./a.out
